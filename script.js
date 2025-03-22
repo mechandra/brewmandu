@@ -1,3 +1,3 @@
-document.getElementById("viewMenu").addEventListener("click", function() {
-    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Brewmandu website loaded successfully!");
 });

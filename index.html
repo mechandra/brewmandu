@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewmandu - Nepali Tea & Coffee</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Brewmandu - The Taste of Kathmandu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Brewmandu! ☕</h1>
+        <h1 class="title">Welcome to Brewmandu! ☕</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="#">Menu</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <p>Experience the best Nepali tea and coffee from the heart of Nepal.</p>
-        <button id="viewMenu">View Menu</button>
+        <h2>Experience the best <span class="highlight">Nepali tea</span> and <span class="highlight">coffee</span> from the heart of Kathmandu.</h2>
+        <a href="#menu" class="btn">View Menu</a>
     </section>
 
-    <section id="menu" class="menu-container">
-        <h2>Our Special Menu</h2>
-        <div class="menu-items">
+    <section id="menu">
+        <h2 class="menu-title">Our Special Menu</h2>
+        <div class="menu-grid">
             <div class="menu-item">
-                <img src="images/tea1.jpg" alt="Masala Tea">
-                <p>Masala Tea</p>
+                <img src="https://github.com/mechandra/brewmandu/blob/main/mashala-chai.webp?raw=true" alt="Masala Chai">
+                <h3 class="item-title">Masala Chai</h3>
             </div>
             <div class="menu-item">
-                <img src="images/tea2.jpg" alt="Butter Tea">
-                <p>Butter Tea</p>
+                <img src="https://github.com/mechandra/brewmandu/blob/main/green-tea.webp?raw=true" alt="Green Tea">
+                <h3 class="item-title">Green Tea</h3>
             </div>
             <div class="menu-item">
-                <img src="images/tea3.jpg" alt="Spiced Milk Tea">
-                <p>Spiced Milk Tea</p>
+                <img src="https://github.com/mechandra/brewmandu/blob/main/himalayan-blacktea.webp?raw=true" alt="Himalayan Black Tea">
+                <h3 class="item-title">Himalayan Black Tea</h3>
             </div>
             <div class="menu-item">
-                <img src="images/tea4.jpg" alt="Black Coffee">
-                <p>Black Coffee</p>
+                <img src="https://github.com/mechandra/brewmandu/blob/main/organic-coffee.webp?raw=true" alt="Organic Coffee">
+                <h3 class="item-title">Organic Coffee</h3>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
