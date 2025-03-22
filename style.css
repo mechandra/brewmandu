@@ -9,14 +9,14 @@ body {
 
 /* Header */
 header {
-    background-color: #6D4C41; /* Coffee brown */
+    background-color: #C8102E; /* Nepal Flag Red */
     color: white;
     padding: 15px;
 }
 
 .title {
     font-size: 2em;
-    color: #FFD700; /* Gold */
+    color: #003893; /* Nepal Flag Blue */
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F4A460; /* Sandy brown */
+    color: white; /* White for contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -48,12 +48,12 @@ nav ul li a:hover {
 }
 
 .highlight {
-    color: #D2691E; /* Chocolate */
+    color: #C8102E; /* Nepal Red */
     font-weight: bold;
 }
 
 .btn {
-    background: #8B4513; /* Saddle brown */
+    background: #003893; /* Nepal Blue */
     color: white;
     padding: 10px 20px;
     display: inline-block;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #D2691E; /* Chocolate */
+    background: #C8102E; /* Nepal Red */
 }
 
 /* Menu Section */
@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .menu-title {
-    color: #6B4226; /* Dark brown */
+    color: #003893; /* Nepal Blue */
     font-size: 1.8em;
 }
 
@@ -98,14 +98,20 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.item-title {
-    color: #B22222; /* Firebrick red */
+.item-title a {
+    color: #C8102E; /* Nepal Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item-title a:hover {
+    color: #003893; /* Nepal Blue */
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
     padding: 15px;
-    background: #6D4C41; /* Coffee brown */
+    background: #C8102E; /* Nepal Red */
     color: white;
 }
