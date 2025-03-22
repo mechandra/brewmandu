@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewmandu</title>
+    <title>Brewmandu - Nepali Tea & Coffee</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="app.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to <span>Brewmandu!</span> ☕</h1>
+        <h1>Welcome to Brewmandu! ☕</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,18 +18,22 @@
             </ul>
         </nav>
     </header>
+    
     <section class="hero">
-        <p>Experience the best Nepali tea and coffee from the heart of Nepal.</p>
-        <button class="menu-btn">View Menu</button>
+        <h2>Experience the best Nepali tea and coffee from the heart of Nepal.</h2>
+        <button onclick="scrollToMenu()">View Menu</button>
     </section>
-    <section class="menu-section">
+    
+    <section id="menu" class="menu-container">
         <h2>Our Special Menu</h2>
-        <div class="menu-container">
-            <img src="image1.jpg" alt="Nepali Tea">
-            <img src="image2.jpg" alt="Special Brew">
-            <img src="image3.jpg" alt="Coffee Selection">
-            <img src="image4.jpg" alt="Traditional Setup">
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/tea1.jpg" alt="Tea 1"><p>Masala Tea</p></div>
+            <div class="menu-item"><img src="images/tea2.jpg" alt="Tea 2"><p>Butter Tea</p></div>
+            <div class="menu-item"><img src="images/tea3.jpg" alt="Tea 3"><p>Spiced Milk Tea</p></div>
+            <div class="menu-item"><img src="images/tea4.jpg" alt="Tea 4"><p>Black Coffee</p></div>
         </div>
     </section>
+    
+    <script src="app.js"></script>
 </body>
 </html>
