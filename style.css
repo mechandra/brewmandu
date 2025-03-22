@@ -19,6 +19,7 @@ header {
     color: #FFD700; /* Gold */
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -47,11 +48,17 @@ nav ul li a:hover {
     padding: 60px 20px;
 }
 
+.black-text {
+    color: black !important;
+    font-weight: bold;
+}
+
 .highlight {
     color: #D2691E; /* Chocolate */
     font-weight: bold;
 }
 
+/* Button */
 .btn {
     background: #8B4513; /* Saddle brown */
     color: white;
@@ -93,19 +100,4 @@ nav ul li a:hover {
     width: 250px;
 }
 
-.menu-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.item-title {
-    color: #B22222; /* Firebrick red */
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-    padding: 15px;
-    background: #6D4C41; /* Coffee brown */
-    color: white;
-}
+.menu-item
