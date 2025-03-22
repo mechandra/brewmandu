@@ -1,15 +1,22 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f1e8;
+    background-color: #fdf6e3;
     text-align: center;
 }
 
+/* Header */
 header {
-    background-color: #8B4513;
+    background-color: #6D4C41; /* Coffee brown */
     color: white;
     padding: 15px;
+}
+
+.title {
+    font-size: 2em;
+    color: #FFD700; /* Gold */
 }
 
 nav ul {
@@ -23,29 +30,51 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #F4A460; /* Sandy brown */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* Hero Section */
 .hero {
     background: url('https://source.unsplash.com/1600x900/?tea,coffee') no-repeat center center/cover;
     color: white;
     padding: 60px 20px;
 }
 
+.highlight {
+    color: #D2691E; /* Chocolate */
+    font-weight: bold;
+}
+
 .btn {
-    background: #8B4513;
+    background: #8B4513; /* Saddle brown */
     color: white;
     padding: 10px 20px;
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background 0.3s ease;
 }
 
+.btn:hover {
+    background: #D2691E; /* Chocolate */
+}
+
+/* Menu Section */
 #menu {
     padding: 40px;
+}
+
+.menu-title {
+    color: #6B4226; /* Dark brown */
+    font-size: 1.8em;
 }
 
 .menu-grid {
@@ -56,22 +85,4 @@ nav ul li a {
 }
 
 .menu-item {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 250px;
-}
-
-.menu-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-footer {
-    margin-top: 20px;
-    padding: 15px;
-    background: #8B4513;
-    color: white;
-}
+    background
