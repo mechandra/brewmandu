@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewmandu - The Taste of Kathmandu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
-        <div class="logo">Brewmandu ☕</div>
         <nav>
+            <h1>Brewmandu ☕</h1>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,49 +19,60 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Brewmandu! ☕</h1>
+    <section id="home">
+        <h2>Welcome to Brewmandu! ☕</h2>
         <p>Experience the best Nepali tea from the heart of Kathmandu.</p>
         <a href="#menu" class="btn">View Menu</a>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Brewmandu</h2>
-        <p>Brewmandu brings authentic Nepali tea flavors to tea lovers worldwide. Sourced from the finest tea gardens in Nepal, our brews are crafted for perfection.</p>
+        <p>Brewmandu brings authentic Nepali tea and coffee flavors to tea lovers worldwide. Sourced from the finest tea gardens in Nepal, our brews are crafted for perfection.</p>
     </section>
 
-    <!-- Menu Section -->
     <section id="menu">
         <h2>Our Special Menu</h2>
-        <div class="menu-items">
+        <div class="menu-container">
             <div class="menu-item">
-                <img src="tea1.jpg" alt="Masala Chai">
+                <img src="images/masala-chai.jpg" alt="Masala Chai">
                 <h3>Masala Chai</h3>
                 <p>Aromatic blend of Nepali spices and tea.</p>
-                <button onclick="orderNow()">Order Now</button>
+                <button class="order-btn">Order Now</button>
             </div>
+
             <div class="menu-item">
-                <img src="tea2.jpg" alt="Green Tea">
+                <img src="images/green-tea.jpg" alt="Green Tea">
                 <h3>Green Tea</h3>
                 <p>Fresh and healthy green tea from Nepal.</p>
-                <button onclick="orderNow()">Order Now</button>
+                <button class="order-btn">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/himalayan-black-tea.jpg" alt="Himalayan Black Tea">
+                <h3>Himalayan Black Tea</h3>
+                <p>Rich and bold flavor with high-altitude aroma.</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/organic-coffee.jpg" alt="Organic Coffee">
+                <h3>Organic Coffee</h3>
+                <p>Pure organic Nepali coffee with a smooth taste.</p>
+                <button class="order-btn">Order Now</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:contact@brewmandu.com">contact@brewmandu.com</a></p>
         <p>Phone: +977 9801234567</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Brewmandu. All rights reserved.</p>
+        <p>© 2025 Brewmandu. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
