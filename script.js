@@ -1,3 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Brewmandu website loaded successfully!");
+/* app.js */
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".menu-btn").addEventListener("click", function () {
+        window.location.href = "#menu";
+    });
 });

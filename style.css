@@ -1,26 +1,20 @@
-/* General Styling */
+/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e3;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #fdf6e3;
-    text-align: center;
 }
 
-/* Header */
 header {
-    background-color: #6D4C41; /* Coffee brown */
-    color: white;
-    padding: 15px;
-}
-
-.title {
-    font-size: 2em;
-    color: #FFD700; /* Gold */
+    background-color: #6d4c41;
+    padding: 20px;
+    color: #ffcc00;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -30,59 +24,34 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F4A460; /* Sandy brown */
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #FFD700; /* Gold */
-}
-
-/* Hero Section */
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?tea,coffee') no-repeat center center/cover;
-    color: white;
-    padding: 60px 20px;
-}
-
-.highlight {
-    color: #D2691E; /* Chocolate */
+    color: #f8f8f8;
     font-weight: bold;
 }
 
-.btn {
-    background: #8B4513; /* Saddle brown */
+.hero p {
+    font-size: 18px;
+    color: #d2691e;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background-color: #6d4c41;
     color: white;
     padding: 10px 20px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background: #D2691E; /* Chocolate */
-}
-
-/* Menu Section */
-#menu {
-    padding: 40px;
-}
-
-.menu-title {
-    color: #6B4226; /* Dark brown */
-    font-size: 1.8em;
-}
-
-.menu-grid {
+.menu-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
-.menu-item {
-    background
+.menu-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
