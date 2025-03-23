@@ -228,40 +228,7 @@
     <h2>Your Cart</h2>
     <ul class="cart-items" id="cart"></ul>
     <p class="total">Total: NPR <span id="total">0</span></p>
-    <button class="checkout-btn" onclick="checkout()">Checkout</button>
-</section>
-
-<!-- Menu Container -->
-<section class="container">
-    <!-- Tea Section (Left) -->
-    <div class="menu-section">
-        <h2>Tea Varieties</h2>
-        <div class="menu-item">
-            <h3>Masala Chai <span class="price">NPR 100</span></h3>
-            <p>Traditional spiced tea brewed with black tea, milk, and aromatic spices.</p>
-            <button onclick="addToCart('Masala Chai', 100)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Green Tea <span class="price">NPR 120</span></h3>
-            <p>Light and refreshing tea loaded with antioxidants and health benefits.</p>
-            <button onclick="addToCart('Green Tea', 120)">Add to Cart</button>
-        </div>
-    </div>
-
-    <!-- Coffee Section (Right) -->
-    <div class="menu-section">
-        <h2>Coffee Varieties</h2>
-        <div class="menu-item">
-            <h3>Organic Coffee <span class="price">NPR 150</span></h3>
-            <p>Grown without pesticides, offering a pure and bold coffee taste.</p>
-            <button onclick="addToCart('Organic Coffee', 150)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Espresso <span class="price">NPR 160</span></h3>
-            <p>Strong, concentrated coffee with a rich crema and intense flavor.</p>
-            <button onclick="addToCart('Espresso', 160)">Add to Cart</button>
-        </div>
-    </div>
+    <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
 </section>
 
 <script>
@@ -280,7 +247,7 @@
         cart.forEach((product, index) => {
             let li = document.createElement("li");
             li.innerHTML = `${product.name} - NPR ${product.price} 
-                <button onclick="removeFromCart(${index})">❌</button>`;
+                <button onclick="removeFromCart(${index})">Remove</button>`;
             cartList.appendChild(li);
             total += product.price;
         });
