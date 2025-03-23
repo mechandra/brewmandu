@@ -3,57 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewmandu - The Taste of Kathmandu</title>
+    <title>Brewmandu Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="title" style="color: rgb(23, 90, 13);">Welcome to Brewmandu! ☕</h1>
-        <nav>
-            <ul>
-                <li><a href="#" style="color: black;">Home</a></li>
-                <li><a href="#" style="color: black;">About</a></li>
-                <li><a href="menu.html" style="color: black;">Menu</a></li>
-                <li><a href="#" style="color: black;">Contact</a></li>
-            </ul> 
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h2 class="maroon-text">Experience the best Nepali tea and coffee from the heart of Nepal.</h2>
-        <a href="menu.html" class="btn">View Menu</a>
-    </section>
+<header>
+    <h1>Brewmandu Menu</h1>
+    <a href="cart.html" class="cart-link">🛒 View Cart (<span id="cart-count">0</span>)</a>
+</header>
 
-    <section id="menu">
-        <h2 class="menu-title">Our Special Menu</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://github.com/mechandra/brewmandu/blob/main/mashala-chai.webp?raw=true" alt="Masala Chai">
-                <h3 class="item-title"><a href="https://en.wikipedia.org/wiki/Masala_chai">Masala Chai</a></h3>
-                <p>Aromatic spiced tea brewed with black tea, milk, and a blend of warm spices like cardamom, cinnamon, and ginger.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/mechandra/brewmandu/blob/main/green-tea.webp?raw=true" alt="Green Tea">
-                <h3 class="item-title"><a href="https://en.wikipedia.org/wiki/Green_tea">Green Tea</a></h3>
-                <p>Fresh and soothing green tea, packed with antioxidants, offering a light yet refreshing taste.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/mechandra/brewmandu/blob/main/himalayan-blacktea.webp?raw=true" alt="Himalayan Black Tea">
-                <h3 class="item-title"><a href="https://www.therighttea.com/tibetan-tea.html#google_vignette">Himalayan Black Tea</a></h3>
-                <p>Rich, full-bodied black tea grown in the high-altitude tea gardens of Nepal, offering a deep and malty flavor.</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://github.com/mechandra/brewmandu/blob/main/organic-coffee.webp?raw=true" alt="Organic Coffee">
-                <h3 class="item-title"><a href="https://en.wikipedia.org/wiki/Organic_coffee">Organic Coffee</a></h3>
-                <p>Premium organic coffee sourced from Nepalese coffee farms, with a bold, smooth, and nutty flavor profile.</p>
-            </div>
+<section class="menu-container">
+    <!-- Tea Section -->
+    <div class="menu-section">
+        <h2>Tea Varieties 🍵</h2>
+        
+        <!-- Nepalese Teas -->
+        <h3>Nepalese Teas</h3>
+        <div class="menu-item">
+            <h3>Ilam Tea <span class="price">NPR 150</span></h3>
+            <p>High-quality organic black tea from the hills of Ilam.</p>
+            <button class="add-to-cart" data-name="Ilam Tea" data-price="150">Add to Cart</button>
         </div>
-    </section>
+        <div class="menu-item">
+            <h3>Silver Needle White Tea <span class="price">NPR 250</span></h3>
+            <p>Rare Nepalese white tea with delicate floral notes.</p>
+            <button class="add-to-cart" data-name="Silver Needle White Tea" data-price="250">Add to Cart</button>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
-    </footer>
+        <!-- Global Teas -->
+        <h3>Global Teas</h3>
+        <div class="menu-item">
+            <h3>Masala Chai <span class="price">NPR 100</span></h3>
+            <p>Traditional Indian spiced tea brewed with black tea, milk, and aromatic spices.</p>
+            <button class="add-to-cart" data-name="Masala Chai" data-price="100">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Green Tea <span class="price">NPR 120</span></h3>
+            <p>Light and refreshing tea loaded with antioxidants.</p>
+            <button class="add-to-cart" data-name="Green Tea" data-price="120">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Earl Grey <span class="price">NPR 130</span></h3>
+            <p>A classic black tea infused with bergamot orange.</p>
+            <button class="add-to-cart" data-name="Earl Grey" data-price="130">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Oolong Tea <span class="price">NPR 180</span></h3>
+            <p>Partially oxidized tea with a complex flavor between green and black tea.</p>
+            <button class="add-to-cart" data-name="Oolong Tea" data-price="180">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Pu-erh Tea <span class="price">NPR 220</span></h3>
+            <p>Aged fermented tea with a rich, earthy taste.</p>
+            <button class="add-to-cart" data-name="Pu-erh Tea" data-price="220">Add to Cart</button>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Coffee Section -->
+    <div class="menu-section">
+        <h2>Coffee Varieties ☕</h2>
+        
+        <!-- Nepalese Coffee -->
+        <h3>Nepalese Coffee</h3>
+        <div class="menu-item">
+            <h3>Nepali Organic Arabica <span class="price">NPR 180</span></h3>
+            <p>Handpicked organic Arabica beans from Nepal’s high-altitude regions.</p>
+            <button class="add-to-cart" data-name="Nepali Organic Arabica" data-price="180">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Himalayan Espresso <span class="price">NPR 200</span></h3>
+            <p>Strong and bold espresso made from Nepalese coffee beans.</p>
+            <button class="add-to-cart" data-name="Himalayan Espresso" data-price="200">Add to Cart</button>
+        </div>
+
+        <!-- Global Coffees -->
+        <h3>Global Coffees</h3>
+        <div class="menu-item">
+            <h3>Espresso <span class="price">NPR 160</span></h3>
+            <p>Strong, concentrated coffee with rich crema.</p>
+            <button class="add-to-cart" data-name="Espresso" data-price="160">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Cappuccino <span class="price">NPR 180</span></h3>
+            <p>Espresso with steamed milk and thick foam.</p>
+            <button class="add-to-cart" data-name="Cappuccino" data-price="180">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Latte <span class="price">NPR 170</span></h3>
+            <p>Espresso with a smooth blend of steamed milk.</p>
+            <button class="add-to-cart" data-name="Latte" data-price="170">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Mocha <span class="price">NPR 190</span></h3>
+            <p>Chocolate-infused coffee with milk and espresso.</p>
+            <button class="add-to-cart" data-name="Mocha" data-price="190">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Turkish Coffee <span class="price">NPR 210</span></h3>
+            <p>Strong, unfiltered coffee with a rich history.</p>
+            <button class="add-to-cart" data-name="Turkish Coffee" data-price="210">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
