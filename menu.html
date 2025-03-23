@@ -240,15 +240,7 @@
         
 </section>
 
-<footer>
-    <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
-</footer>
 
-<script>
-    function addToCart(item, price) {
-        alert(item + " added to your cart. Price: NPR " + price);
-    }
-</script>
 
 <!-- Cart Section -->
 <section class="cart-section">
@@ -261,7 +253,7 @@
 <style>
     .cart-section {
         position: sticky;
-        top: 1000px;
+        top: 100px;
         right: 40px;
         width: 300px;
         background: #fff;
@@ -342,5 +334,16 @@
             // Redirect to the payment page with total amount as a query parameter
             window.location.href = "payment.html?total=" + totalAmount;
         }
+    }
+</script>
+
+
+<footer>
+    <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
+</footer>
+
+<script>
+    function addToCart(item, price) {
+        alert(item + " added to your cart. Price: NPR " + price);
     }
 </script>
