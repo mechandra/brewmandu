@@ -168,9 +168,11 @@ footer {
     background-color: #DC143C; /* Crimson */
 }
 
-.price {
+.menu-item .price {
+    display: block; /* Ensures price appears on a new line */
+    margin-top: 5px;
     font-weight: bold;
-    color: #1e941a; /* Green */
+    color: #1e941a; /* Green for price */
 }
 
 .menu-section {
