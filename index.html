@@ -7,106 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>Brewmandu Menu</h1>
-    <a href="cart.html" class="cart-link">🛒 View Cart (<span id="cart-count">0</span>)</a>
-</header>
-
-<section class="menu-container">
-    <!-- Tea Section -->
-    <div class="menu-section">
-        <h2>Tea Varieties 🍵</h2>
+    <header>
+        <h1 class="title">Brewmandu Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="menu">
+        <h2>Our Tea Selection</h2>
+        <ul>
+            <li><strong>Masala Chai</strong> - NPR 120<br>Spiced tea with milk, cardamom, cinnamon, and ginger.</li>
+            <li><strong>Green Tea</strong> - NPR 100<br>Fresh and antioxidant-rich green tea.</li>
+            <li><strong>Himalayan Black Tea</strong> - NPR 130<br>Bold and malty tea sourced from Nepal’s high-altitude gardens.</li>
+            <li><strong>Milk Tea</strong> - NPR 110<br>Classic Nepali tea with milk and sugar.</li>
+            <li><strong>Butter Tea</strong> - NPR 150<br>Traditional Tibetan-style tea with butter and salt.</li>
+            <li><strong>Jasmine Tea</strong> - NPR 140<br>Fragrant jasmine-infused green tea.</li>
+            <li><strong>Chamomile Tea</strong> - NPR 150<br>Relaxing and caffeine-free herbal tea.</li>
+            <li><strong>Mint Tea</strong> - NPR 130<br>Refreshing mint-infused tea, perfect for digestion.</li>
+            <li><strong>Earl Grey Tea</strong> - NPR 140<br>Classic black tea infused with bergamot essence.</li>
+        </ul>
         
-        <!-- Nepalese Teas -->
-        <h3>Nepalese Teas</h3>
-        <div class="menu-item">
-            <h3>Ilam Tea <span class="price">NPR 150</span></h3>
-            <p>High-quality organic black tea from the hills of Ilam.</p>
-            <button class="add-to-cart" data-name="Ilam Tea" data-price="150">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Silver Needle White Tea <span class="price">NPR 250</span></h3>
-            <p>Rare Nepalese white tea with delicate floral notes.</p>
-            <button class="add-to-cart" data-name="Silver Needle White Tea" data-price="250">Add to Cart</button>
-        </div>
-
-        <!-- Global Teas -->
-        <h3>Global Teas</h3>
-        <div class="menu-item">
-            <h3>Masala Chai <span class="price">NPR 100</span></h3>
-            <p>Traditional Indian spiced tea brewed with black tea, milk, and aromatic spices.</p>
-            <button class="add-to-cart" data-name="Masala Chai" data-price="100">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Green Tea <span class="price">NPR 120</span></h3>
-            <p>Light and refreshing tea loaded with antioxidants.</p>
-            <button class="add-to-cart" data-name="Green Tea" data-price="120">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Earl Grey <span class="price">NPR 130</span></h3>
-            <p>A classic black tea infused with bergamot orange.</p>
-            <button class="add-to-cart" data-name="Earl Grey" data-price="130">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Oolong Tea <span class="price">NPR 180</span></h3>
-            <p>Partially oxidized tea with a complex flavor between green and black tea.</p>
-            <button class="add-to-cart" data-name="Oolong Tea" data-price="180">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Pu-erh Tea <span class="price">NPR 220</span></h3>
-            <p>Aged fermented tea with a rich, earthy taste.</p>
-            <button class="add-to-cart" data-name="Pu-erh Tea" data-price="220">Add to Cart</button>
-        </div>
-    </div>
-
-    <!-- Coffee Section -->
-    <div class="menu-section">
-        <h2>Coffee Varieties ☕</h2>
-        
-        <!-- Nepalese Coffee -->
-        <h3>Nepalese Coffee</h3>
-        <div class="menu-item">
-            <h3>Nepali Organic Arabica <span class="price">NPR 180</span></h3>
-            <p>Handpicked organic Arabica beans from Nepal’s high-altitude regions.</p>
-            <button class="add-to-cart" data-name="Nepali Organic Arabica" data-price="180">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Himalayan Espresso <span class="price">NPR 200</span></h3>
-            <p>Strong and bold espresso made from Nepalese coffee beans.</p>
-            <button class="add-to-cart" data-name="Himalayan Espresso" data-price="200">Add to Cart</button>
-        </div>
-
-        <!-- Global Coffees -->
-        <h3>Global Coffees</h3>
-        <div class="menu-item">
-            <h3>Espresso <span class="price">NPR 160</span></h3>
-            <p>Strong, concentrated coffee with rich crema.</p>
-            <button class="add-to-cart" data-name="Espresso" data-price="160">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Cappuccino <span class="price">NPR 180</span></h3>
-            <p>Espresso with steamed milk and thick foam.</p>
-            <button class="add-to-cart" data-name="Cappuccino" data-price="180">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Latte <span class="price">NPR 170</span></h3>
-            <p>Espresso with a smooth blend of steamed milk.</p>
-            <button class="add-to-cart" data-name="Latte" data-price="170">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Mocha <span class="price">NPR 190</span></h3>
-            <p>Chocolate-infused coffee with milk and espresso.</p>
-            <button class="add-to-cart" data-name="Mocha" data-price="190">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <h3>Turkish Coffee <span class="price">NPR 210</span></h3>
-            <p>Strong, unfiltered coffee with a rich history.</p>
-            <button class="add-to-cart" data-name="Turkish Coffee" data-price="210">Add to Cart</button>
-        </div>
-    </div>
-</section>
-
-<script src="script.js"></script>
+        <h2>Our Coffee Selection</h2>
+        <ul>
+            <li><strong>Organic Coffee</strong> - NPR 180<br>Rich and nutty organic coffee sourced from Nepalese farms.</li>
+            <li><strong>Espresso</strong> - NPR 150<br>Strong and bold shot of espresso.</li>
+            <li><strong>Cappuccino</strong> - NPR 200<br>Espresso with steamed milk and a frothy top.</li>
+            <li><strong>Latte</strong> - NPR 220<br>Smooth and creamy espresso with steamed milk.</li>
+            <li><strong>Americano</strong> - NPR 160<br>Espresso with added hot water for a smoother taste.</li>
+            <li><strong>Mocha</strong> - NPR 230<br>Chocolate-flavored coffee with steamed milk.</li>
+            <li><strong>Cold Brew</strong> - NPR 190<br>Slow-brewed coffee served chilled.</li>
+            <li><strong>Affogato</strong> - NPR 250<br>Espresso poured over vanilla ice cream.</li>
+            <li><strong>Turkish Coffee</strong> - NPR 170<br>Strong and aromatic coffee with a rich texture.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
+    </footer>
 </body>
 </html>
