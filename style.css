@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 .menu-grid {
     display: flex;
-    justify-content: space-between;  /* Space out items horizontally */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -93,54 +93,18 @@ nav ul li a:hover {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    text-align: left; /* Align text to the left */
-    display: flex;
-    flex-direction: row; /* Align items horizontally */
-    justify-content: space-between; /* Space out elements inside the menu item */
-    align-items: center; /* Vertically center the content */
-    width: 100%; /* Full width of the container */
-    max-width: 00px; /* Limit the max width */
-    margin: 10px 0;
+    text-align: center;
+    width: 90%; /* Make items fit mobile screens */
+    max-width: 250px; /* Limit width on large screens */
 }
 
 .menu-item img {
-    width: 120px; /* Fixed width for images */
-    height: auto;
-    margin-right: 15px; /* Add space between image and content */
+    width: 100%;
     border-radius: 5px;
 }
 
 .item-title {
     color: #DC143C;
-    font-size: 1.2em; /* Title size */
-    font-weight: bold;
-}
-
-.item-description {
-    font-size: 1em;
-    color: #555;
-    margin-top: 10px;
-}
-
-.price {
-    font-weight: bold;
-    color: #1e941a; /* Green */
-    font-size: 1.2em;
-}
-
-.menu-item button {
-    background-color: #1e941a; /* Green */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.menu-item button:hover {
-    background-color: #DC143C; /* Crimson */
 }
 
 /* Footer */
@@ -172,7 +136,7 @@ footer {
     }
 
     .menu-item {
-        width: 90%; /* Ensure items fill the screen width */
+        width: 90%;
     }
 
     nav ul {
