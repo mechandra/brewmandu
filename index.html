@@ -3,52 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewmandu Menu</title>
+    <title>Brewmandu - The Taste of Kathmandu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 class="title">Brewmandu Menu</h1>
+        <h1 class="title">Welcome to Brewmandu! ☕</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="menu">
-        <h2>Our Tea Selection</h2>
-        <ul>
-            <li><strong>Masala Chai</strong> - NPR 120<br>Spiced tea with milk, cardamom, cinnamon, and ginger.</li>
-            <li><strong>Green Tea</strong> - NPR 100<br>Fresh and antioxidant-rich green tea.</li>
-            <li><strong>Himalayan Black Tea</strong> - NPR 130<br>Bold and malty tea sourced from Nepal’s high-altitude gardens.</li>
-            <li><strong>Milk Tea</strong> - NPR 110<br>Classic Nepali tea with milk and sugar.</li>
-            <li><strong>Butter Tea</strong> - NPR 150<br>Traditional Tibetan-style tea with butter and salt.</li>
-            <li><strong>Jasmine Tea</strong> - NPR 140<br>Fragrant jasmine-infused green tea.</li>
-            <li><strong>Chamomile Tea</strong> - NPR 150<br>Relaxing and caffeine-free herbal tea.</li>
-            <li><strong>Mint Tea</strong> - NPR 130<br>Refreshing mint-infused tea, perfect for digestion.</li>
-            <li><strong>Earl Grey Tea</strong> - NPR 140<br>Classic black tea infused with bergamot essence.</li>
-        </ul>
-        
-        <h2>Our Coffee Selection</h2>
-        <ul>
-            <li><strong>Organic Coffee</strong> - NPR 180<br>Rich and nutty organic coffee sourced from Nepalese farms.</li>
-            <li><strong>Espresso</strong> - NPR 150<br>Strong and bold shot of espresso.</li>
-            <li><strong>Cappuccino</strong> - NPR 200<br>Espresso with steamed milk and a frothy top.</li>
-            <li><strong>Latte</strong> - NPR 220<br>Smooth and creamy espresso with steamed milk.</li>
-            <li><strong>Americano</strong> - NPR 160<br>Espresso with added hot water for a smoother taste.</li>
-            <li><strong>Mocha</strong> - NPR 230<br>Chocolate-flavored coffee with steamed milk.</li>
-            <li><strong>Cold Brew</strong> - NPR 190<br>Slow-brewed coffee served chilled.</li>
-            <li><strong>Affogato</strong> - NPR 250<br>Espresso poured over vanilla ice cream.</li>
-            <li><strong>Turkish Coffee</strong> - NPR 170<br>Strong and aromatic coffee with a rich texture.</li>
-        </ul>
+
+    <section class="hero">
+        <h2 class="maroon-text">Experience the best Nepali tea and coffee from the heart of Nepal.</h2>
+        <a href="#menu" class="btn">View Menu</a>
     </section>
-    
+
+    <section id="menu">
+        <h2 class="menu-title">Our Special Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://github.com/mechandra/brewmandu/blob/main/mashala-chai.webp?raw=true" alt="Masala Chai">
+                <h3 class="item-title"><a href="https://brewmandu.com/masala-chai">Masala Chai</a></h3>
+                <p>Aromatic spiced tea brewed with black tea, milk, and a blend of warm spices like cardamom, cinnamon, and ginger.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://github.com/mechandra/brewmandu/blob/main/green-tea.webp?raw=true" alt="Green Tea">
+                <h3 class="item-title"><a href="https://brewmandu.com/green-tea">Green Tea</a></h3>
+                <p>Fresh and soothing green tea, packed with antioxidants, offering a light yet refreshing taste.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://github.com/mechandra/brewmandu/blob/main/himalayan-blacktea.webp?raw=true" alt="Himalayan Black Tea">
+                <h3 class="item-title"><a href="https://brewmandu.com/himalayan-black-tea">Himalayan Black Tea</a></h3>
+                <p>Rich, full-bodied black tea grown in the high-altitude tea gardens of Nepal, offering a deep and malty flavor.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://github.com/mechandra/brewmandu/blob/main/organic-coffee.webp?raw=true" alt="Organic Coffee">
+                <h3 class="item-title"><a href="https://brewmandu.com/organic-coffee">Organic Coffee</a></h3>
+                <p>Premium organic coffee sourced from Nepalese coffee farms, with a bold, smooth, and nutty flavor profile.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
