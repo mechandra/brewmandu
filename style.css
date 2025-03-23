@@ -189,7 +189,7 @@ footer {
     .cart-section {
         position: fixed;
         top: 10px;
-        right: 10px;
+        right: 100px;
         width: auto;
         z-index: 1000;
     }
