@@ -121,3 +121,6 @@ nav ul li a {
 nav ul li a {
     color: rgb(23, 90, 13); /* Dark Black */
 }
+.total {
+    font-weight: bold;
+}
