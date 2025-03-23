@@ -6,120 +6,107 @@
     <title>Brewmandu Menu</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #a52a2a;
+            color: white;
+        }
+
         .menu-container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
+
         .menu-section {
             width: 48%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
         .menu-section h2 {
-            text-align: left;
+            text-align: center;
             color: maroon;
+            border-bottom: 2px solid maroon;
+            padding-bottom: 10px;
         }
+
         .menu-item {
-            text-align: left;
-            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #a52a2a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #a52a2a;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 class="title" style="color: rgb(23, 90, 13);">Brewmandu Menu</h1>
+    <h1>Brewmandu Menu</h1>
 </header>
 
 <section class="menu-container">
     <!-- Tea Section (Left) -->
     <div class="menu-section">
         <h2>Tea Varieties</h2>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Masala_chai">Masala Chai</a> - NPR 100</h3>
-            <p>Spiced black tea brewed with milk and aromatic spices.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Green_tea">Green Tea</a> - NPR 120</h3>
-            <p>Light and refreshing tea packed with antioxidants.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Black_tea">Himalayan Black Tea</a> - NPR 130</h3>
-            <p>Rich, full-bodied tea with a deep malty flavor.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Earl_Grey_tea">Earl Grey Tea</a> - NPR 140</h3>
-            <p>Classic black tea infused with bergamot for a citrusy aroma.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Butter_tea">Tibetan Butter Tea</a> - NPR 150</h3>
-            <p>Traditional Himalayan tea made with butter and salt.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Oolong">Oolong Tea</a> - NPR 160</h3>
-            <p>Partially oxidized tea offering a balance between green and black tea flavors.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/White_tea">White Tea</a> - NPR 180</h3>
-            <p>Delicate and lightly processed tea with a floral aroma.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Pu%27er_tea">Pu-erh Tea</a> - NPR 200</h3>
-            <p>Fermented tea from China with a rich, earthy flavor.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Matcha">Matcha</a> - NPR 220</h3>
-            <p>Powdered green tea whisked into a frothy drink.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Jasmine_tea">Jasmine Tea</a> - NPR 170</h3>
-            <p>Green tea infused with jasmine flowers for a floral aroma.</p>
-        </div>
+        <div class="menu-item"><h3>Masala Chai</h3> <span class="price">NPR 100</span></div>
+        <div class="menu-item"><h3>Green Tea</h3> <span class="price">NPR 120</span></div>
+        <div class="menu-item"><h3>Himalayan Black Tea</h3> <span class="price">NPR 130</span></div>
+        <div class="menu-item"><h3>Earl Grey Tea</h3> <span class="price">NPR 140</span></div>
+        <div class="menu-item"><h3>Tibetan Butter Tea</h3> <span class="price">NPR 150</span></div>
+        <div class="menu-item"><h3>Oolong Tea</h3> <span class="price">NPR 160</span></div>
+        <div class="menu-item"><h3>White Tea</h3> <span class="price">NPR 180</span></div>
+        <div class="menu-item"><h3>Pu-erh Tea</h3> <span class="price">NPR 200</span></div>
+        <div class="menu-item"><h3>Matcha</h3> <span class="price">NPR 220</span></div>
+        <div class="menu-item"><h3>Jasmine Tea</h3> <span class="price">NPR 170</span></div>
     </div>
 
     <!-- Coffee Section (Right) -->
     <div class="menu-section">
         <h2>Coffee Varieties</h2>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Organic_coffee">Organic Coffee</a> - NPR 150</h3>
-            <p>Bold and nutty coffee from Nepalese farms.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Espresso">Espresso</a> - NPR 160</h3>
-            <p>Strong and concentrated coffee shot.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Cappuccino">Cappuccino</a> - NPR 180</h3>
-            <p>Espresso topped with steamed milk and foam.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Cafe_latte">Café Latte</a> - NPR 170</h3>
-            <p>Smooth espresso with steamed milk.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Mocha">Mocha</a> - NPR 190</h3>
-            <p>Espresso blended with chocolate and steamed milk.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Americano">Americano</a> - NPR 150</h3>
-            <p>Espresso diluted with hot water for a lighter taste.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Macchiato">Macchiato</a> - NPR 175</h3>
-            <p>Espresso with a small amount of milk foam.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Flat_white">Flat White</a> - NPR 180</h3>
-            <p>Rich espresso blended with microfoamed milk.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Irish_coffee">Irish Coffee</a> - NPR 250</h3>
-            <p>Coffee mixed with whiskey, sugar, and topped with cream.</p>
-        </div>
-        <div class="menu-item">
-            <h3><a href="https://en.wikipedia.org/wiki/Turkish_coffee">Turkish Coffee</a> - NPR 200</h3>
-            <p>Finely ground coffee brewed unfiltered for a strong taste.</p>
-        </div>
+        <div class="menu-item"><h3>Organic Coffee</h3> <span class="price">NPR 150</span></div>
+        <div class="menu-item"><h3>Espresso</h3> <span class="price">NPR 160</span></div>
+        <div class="menu-item"><h3>Cappuccino</h3> <span class="price">NPR 180</span></div>
+        <div class="menu-item"><h3>Café Latte</h3> <span class="price">NPR 170</span></div>
+        <div class="menu-item"><h3>Mocha</h3> <span class="price">NPR 190</span></div>
+        <div class="menu-item"><h3>Americano</h3> <span class="price">NPR 150</span></div>
+        <div class="menu-item"><h3>Macchiato</h3> <span class="price">NPR 175</span></div>
+        <div class="menu-item"><h3>Flat White</h3> <span class="price">NPR 180</span></div>
+        <div class="menu-item"><h3>Irish Coffee</h3> <span class="price">NPR 250</span></div>
+        <div class="menu-item"><h3>Turkish Coffee</h3> <span class="price">NPR 200</span></div>
     </div>
 </section>
 
