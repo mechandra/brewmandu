@@ -93,33 +93,39 @@ nav ul li a:hover {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    text-align: left; /* Align text to the left */
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: flex-start; /* Align items at the start of the container */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-between; /* Space out elements inside the menu item */
+    align-items: center; /* Vertically center the content */
     width: 100%; /* Full width of the container */
     max-width: 800px; /* Limit the max width */
     margin: 10px 0;
 }
 
-.menu-item h3 {
-    margin-right: 20px; /* Add space between name and price */
-    margin-bottom: 0; /* Remove any extra space below the item name */
+.menu-item img {
+    width: 120px; /* Fixed width for images */
+    height: auto;
+    margin-right: 15px; /* Add space between image and content */
+    border-radius: 5px;
 }
 
-.menu-item .price {
-    display: block; /* Price on a new line below the item name */
-    margin-top: 5px; /* Space between name and price */
+.item-title {
+    color: #DC143C;
+    font-size: 1.2em; /* Title size */
     font-weight: bold;
-    color: #1e941a; /* Green color for price */
 }
 
-.menu-item p {
-    margin: 0 20px 0 0; /* Adjust the space around description */
-    max-width: 200px; /* Limit description width to prevent overflow */
-    white-space: nowrap; /* Prevent description from wrapping into multiple lines */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis if description is too long */
+.item-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #1e941a; /* Green */
+    font-size: 1.2em;
 }
 
 .menu-item button {
@@ -131,7 +137,6 @@ nav ul li a:hover {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    align-self: flex-start; /* Align button to the left */
 }
 
 .menu-item button:hover {
