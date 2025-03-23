@@ -312,20 +312,8 @@
         let confirmCheckout = confirm("Proceeding to checkout with total: NPR " + totalAmount);
 
         if (confirmCheckout) {
-            // Clear the cart
-            cart = [];
-            updateCart();
-
-            // Display confirmation message
-            let cartSection = document.querySelector(".cart-section");
-            cartSection.innerHTML = `
-                <h2>Order Confirmed</h2>
-                <p>Thank you for your purchase! Your total amount is NPR ${totalAmount}.</p>
-                <button class="checkout-btn" onclick="window.location.reload()">Shop Again</button>
-            `;
-
-            // Optional: Redirect to a checkout page
-            // window.location.href = "checkout.html";
+            // Redirect to the payment page with total amount as a query parameter
+            window.location.href = "payment.html?total=" + totalAmount;
         }
     }
 </script>

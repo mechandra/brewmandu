@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+</head>
+<body>
+    <h2>Payment Page</h2>
+    <p>Total Amount: NPR <span id="paymentTotal">0</span></p>
+    <button onclick="payNow()">Pay Now</button>
+
+    <script>
+        // Get total amount from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalAmount = urlParams.get("total") || 0;
+        document.getElementById("paymentTotal").textContent = totalAmount;
+
+        function payNow() {
+            alert("Payment Successful! Thank you for your order.");
+            window.location.href = "index.html"; // Redirect back to homepage
+        }
+    </script>
+</body>
+</html>
