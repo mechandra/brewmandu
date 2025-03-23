@@ -302,6 +302,27 @@
     }
 
     function checkout() {
-        alert("Proceeding to checkout with total: NPR " + document.getElementById("total").textContent);
-    }
-</script>
+        let totalAmount = document.getElementById("total").textContent;
+
+        if (cart.length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        let confirmCheckout = confirm("Proceeding to checkout with total: NPR " + totalAmount);
+
+        if (confirmCheckout) {
+            // Clear the cart
+            cart = [];
+            updateCart();
+
+            // Display confirmation message
+            let cartSection = document.querySelector(".cart-section");
+            cartSection.innerHTML = `
+                <h2>Order Confirmed</h2>
+                <p>Thank you for your purchase! Your total amount is NPR ${totalAmount}.</p>
+                <button class="checkout-btn" onclick="window.location.reload()">Shop Again</button>
+            `;
+
+            // Optional: Redirect to a checkout page
+
