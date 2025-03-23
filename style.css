@@ -115,3 +115,6 @@ footer {
 nav ul li a {
     color: darkgreen; /* Dark Green */
 }
+nav ul li a {
+    color: black; /* Dark Black */
+}
