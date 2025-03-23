@@ -5,50 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewmandu Menu</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .menu-section {
+            width: 48%;
+        }
+        .menu-section h2 {
+            text-align: left;
+            color: maroon;
+        }
+        .menu-item {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="title">Brewmandu Menu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="menu">
-        <h2>Our Tea Selection</h2>
-        <ul>
-            <li><strong>Masala Chai</strong> - NPR 120<br>Spiced tea with milk, cardamom, cinnamon, and ginger.</li>
-            <li><strong>Green Tea</strong> - NPR 100<br>Fresh and antioxidant-rich green tea.</li>
-            <li><strong>Himalayan Black Tea</strong> - NPR 130<br>Bold and malty tea sourced from Nepal’s high-altitude gardens.</li>
-            <li><strong>Milk Tea</strong> - NPR 110<br>Classic Nepali tea with milk and sugar.</li>
-            <li><strong>Butter Tea</strong> - NPR 150<br>Traditional Tibetan-style tea with butter and salt.</li>
-            <li><strong>Jasmine Tea</strong> - NPR 140<br>Fragrant jasmine-infused green tea.</li>
-            <li><strong>Chamomile Tea</strong> - NPR 150<br>Relaxing and caffeine-free herbal tea.</li>
-            <li><strong>Mint Tea</strong> - NPR 130<br>Refreshing mint-infused tea, perfect for digestion.</li>
-            <li><strong>Earl Grey Tea</strong> - NPR 140<br>Classic black tea infused with bergamot essence.</li>
-        </ul>
-        
-        <h2>Our Coffee Selection</h2>
-        <ul>
-            <li><strong>Organic Coffee</strong> - NPR 180<br>Rich and nutty organic coffee sourced from Nepalese farms.</li>
-            <li><strong>Espresso</strong> - NPR 150<br>Strong and bold shot of espresso.</li>
-            <li><strong>Cappuccino</strong> - NPR 200<br>Espresso with steamed milk and a frothy top.</li>
-            <li><strong>Latte</strong> - NPR 220<br>Smooth and creamy espresso with steamed milk.</li>
-            <li><strong>Americano</strong> - NPR 160<br>Espresso with added hot water for a smoother taste.</li>
-            <li><strong>Mocha</strong> - NPR 230<br>Chocolate-flavored coffee with steamed milk.</li>
-            <li><strong>Cold Brew</strong> - NPR 190<br>Slow-brewed coffee served chilled.</li>
-            <li><strong>Affogato</strong> - NPR 250<br>Espresso poured over vanilla ice cream.</li>
-            <li><strong>Turkish Coffee</strong> - NPR 170<br>Strong and aromatic coffee with a rich texture.</li>
-        </ul>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
-    </footer>
+
+<header>
+    <h1 class="title" style="color: rgb(23, 90, 13);">Brewmandu Menu</h1>
+</header>
+
+<section class="menu-container">
+    <!-- Tea Section (Left) -->
+    <div class="menu-section">
+        <h2>Tea Varieties</h2>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Masala_chai">Masala Chai</a> - NPR 100</h3>
+            <p>Spiced black tea brewed with milk and aromatic spices.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Green_tea">Green Tea</a> - NPR 120</h3>
+            <p>Light and refreshing tea packed with antioxidants.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Black_tea">Himalayan Black Tea</a> - NPR 130</h3>
+            <p>Rich, full-bodied tea with a deep malty flavor.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Earl_Grey_tea">Earl Grey Tea</a> - NPR 140</h3>
+            <p>Classic black tea infused with bergamot for a citrusy aroma.</p>
+        </div>
+    </div>
+
+    <!-- Coffee Section (Right) -->
+    <div class="menu-section">
+        <h2>Coffee Varieties</h2>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Organic_coffee">Organic Coffee</a> - NPR 150</h3>
+            <p>Bold and nutty coffee from Nepalese farms.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Espresso">Espresso</a> - NPR 160</h3>
+            <p>Strong and concentrated coffee shot.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Cappuccino">Cappuccino</a> - NPR 180</h3>
+            <p>Espresso topped with steamed milk and foam.</p>
+        </div>
+        <div class="menu-item">
+            <h3><a href="https://en.wikipedia.org/wiki/Cafe_latte">Café Latte</a> - NPR 170</h3>
+            <p>Smooth espresso with steamed milk.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
+</footer>
+
 </body>
 </html>
