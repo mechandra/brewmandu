@@ -107,6 +107,24 @@ nav ul li a:hover {
     color: #DC143C;
 }
 
+/* New Flexbox Layout for Tea and Coffee Sections */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 10px;
+}
+
+.menu-section {
+    width: 48%; /* Adjust width to allow space between sections */
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #003893; /* Dark Blue */
+    margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
     margin-top: 20px;
@@ -150,6 +168,16 @@ footer {
         margin-bottom: 8px;
         display: block;
     }
+
+    /* Adjusting flex layout for mobile */
+    .menu-container {
+        flex-direction: column; /* Stack Tea and Coffee sections vertically */
+        align-items: center;
+    }
+
+    .menu-section {
+        width: 90%; /* Full width on mobile */
+    }
 }
 
 /* Additional Styling for Menu Items */
@@ -184,8 +212,6 @@ footer {
     color: #003893; /* Dark Blue */
     margin-bottom: 15px;
 }
-
-
 
 /* Ensure the body or parent container allows sticky positioning */
 body {
