@@ -112,3 +112,6 @@ footer {
 .maroon-text {
     color: maroon;
 }
+nav ul li a {
+    color: darkgreen; /* Dark Green */
+}
