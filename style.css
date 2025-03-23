@@ -151,3 +151,37 @@ footer {
         display: block;
     }
 }
+
+
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-item h3 {
+        font-size: 14px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    .cart-section {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .checkout-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
