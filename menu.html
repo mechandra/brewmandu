@@ -231,6 +231,45 @@
     <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
 </section>
 
+<style>
+    .cart-section {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 250px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-items {
+        list-style: none;
+        padding: 0;
+    }
+
+    .cart-items li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        background: #ff9800;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+        background: #e68900;
+    }
+</style>
+
 <script>
     let cart = [];
 
