@@ -41,10 +41,6 @@
             margin-bottom: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
         }
 
         .menu-item h3 {
@@ -54,8 +50,7 @@
         }
 
         .menu-item .price {
-            display: block;
-            margin-top: 5px;
+            float: right;
             color: #4CAF50;
             font-weight: bold;
         }
@@ -63,9 +58,6 @@
         .menu-item p {
             margin: 5px 0;
             font-size: 1em;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .menu-item button {
@@ -101,71 +93,61 @@
         <h2>Tea Varieties</h2>
         
         <div class="menu-item">
-            <h3>Masala Chai</h3>
-            <span class="price">NPR 100</span>
+            <h3>Masala Chai <span class="price">NPR 100</span></h3>
             <p>Traditional spiced tea brewed with black tea, milk, and aromatic spices.</p>
             <button onclick="addToCart('Masala Chai', 100)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Green Tea</h3>
-            <span class="price">NPR 120</span>
+            <h3>Green Tea <span class="price">NPR 120</span></h3>
             <p>Light and refreshing tea loaded with antioxidants and health benefits.</p>
             <button onclick="addToCart('Green Tea', 120)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Himalayan Black Tea</h3>
-            <span class="price">NPR 130</span>
+            <h3>Himalayan Black Tea <span class="price">NPR 130</span></h3>
             <p>Strong and malty black tea sourced from the high-altitude gardens of Nepal.</p>
             <button onclick="addToCart('Himalayan Black Tea', 130)">Add to Cart</button>
         </div>
         
         <div class="menu-item">
-            <h3>Earl Grey Tea</h3>
-            <span class="price">NPR 140</span>
+            <h3>Earl Grey Tea <span class="price">NPR 140</span></h3>
             <p>Classic black tea infused with fragrant bergamot for a citrusy aroma.</p>
             <button onclick="addToCart('Earl Grey Tea', 140)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Tibetan Butter Tea</h3>
-            <span class="price">NPR 150</span>
+            <h3>Tibetan Butter Tea <span class="price">NPR 150</span></h3>
             <p>Authentic salty tea mixed with butter and milk, a Himalayan tradition.</p>
             <button onclick="addToCart('Tibetan Butter Tea', 150)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Oolong Tea</h3>
-            <span class="price">NPR 160</span>
+            <h3>Oolong Tea <span class="price">NPR 160</span></h3>
             <p>A semi-oxidized tea with a unique balance between green and black tea flavors.</p>
             <button onclick="addToCart('Oolong Tea', 160)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>White Tea</h3>
-            <span class="price">NPR 180</span>
+            <h3>White Tea <span class="price">NPR 180</span></h3>
             <p>Delicate and minimally processed tea, offering a mild and sweet taste.</p>
             <button onclick="addToCart('White Tea', 180)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Pu-erh Tea</h3>
-            <span class="price">NPR 200</span>
+            <h3>Pu-erh Tea <span class="price">NPR 200</span></h3>
             <p>Fermented tea with a deep, earthy flavor and known for its health benefits.</p>
             <button onclick="addToCart('Pu-erh Tea', 200)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Matcha</h3>
-            <span class="price">NPR 220</span>
+            <h3>Matcha <span class="price">NPR 220</span></h3>
             <p>Vibrant powdered green tea packed with antioxidants and rich umami taste.</p>
             <button onclick="addToCart('Matcha', 220)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Jasmine Tea</h3>
-            <span class="price">NPR 170</span>
+            <h3>Jasmine Tea <span class="price">NPR 170</span></h3>
             <p>Green tea scented with fresh jasmine flowers for a floral aroma.</p>
             <button onclick="addToCart('Jasmine Tea', 170)">Add to Cart</button>
         </div>
@@ -176,71 +158,61 @@
         <h2>Coffee Varieties</h2>
         
         <div class="menu-item">
-            <h3>Organic Coffee</h3>
-            <span class="price">NPR 150</span>
+            <h3>Organic Coffee <span class="price">NPR 150</span></h3>
             <p>Grown without pesticides, offering a pure and bold coffee taste.</p>
             <button onclick="addToCart('Organic Coffee', 150)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Espresso</h3>
-            <span class="price">NPR 160</span>
+            <h3>Espresso <span class="price">NPR 160</span></h3>
             <p>Strong, concentrated coffee with a rich crema and intense flavor.</p>
             <button onclick="addToCart('Espresso', 160)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Cappuccino</h3>
-            <span class="price">NPR 180</span>
+            <h3>Cappuccino <span class="price">NPR 180</span></h3>
             <p>Espresso with steamed milk and a thick layer of frothy milk foam.</p>
             <button onclick="addToCart('Cappuccino', 180)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Café Latte</h3>
-            <span class="price">NPR 170</span>
+            <h3>Café Latte <span class="price">NPR 170</span></h3>
             <p>Smooth espresso mixed with steamed milk for a creamy texture.</p>
             <button onclick="addToCart('Café Latte', 170)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Mocha</h3>
-            <span class="price">NPR 190</span>
+            <h3>Mocha <span class="price">NPR 190</span></h3>
             <p>Espresso blended with rich chocolate and steamed milk.</p>
             <button onclick="addToCart('Mocha', 190)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Americano</h3>
-            <span class="price">NPR 150</span>
+            <h3>Americano <span class="price">NPR 150</span></h3>
             <p>Espresso diluted with hot water, creating a milder coffee taste.</p>
             <button onclick="addToCart('Americano', 150)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Macchiato</h3>
-            <span class="price">NPR 175</span>
+            <h3>Macchiato <span class="price">NPR 175</span></h3>
             <p>Espresso with a small dollop of milk foam, a perfect balance.</p>
             <button onclick="addToCart('Macchiato', 175)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Flat White</h3>
-            <span class="price">NPR 180</span>
+            <h3>Flat White <span class="price">NPR 180</span></h3>
             <p>Espresso with velvety steamed milk, offering a rich coffee flavor.</p>
             <button onclick="addToCart('Flat White', 180)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Irish Coffee</h3>
-            <span class="price">NPR 250</span>
+            <h3>Irish Coffee <span class="price">NPR 250</span></h3>
             <p>Hot coffee mixed with Irish whiskey, sugar, and topped with cream.</p>
             <button onclick="addToCart('Irish Coffee', 250)">Add to Cart</button>
         </div>
 
         <div class="menu-item">
-            <h3>Turkish Coffee</h3>
-            <span class="price">NPR 200</span>
+            <h3>Turkish Coffee <span class="price">NPR 200</span></h3>
             <p>Strong, unfiltered coffee with a thick texture and bold aroma.</p>
             <button onclick="addToCart('Turkish Coffee', 200)">Add to Cart</button>
         </div>
@@ -248,8 +220,14 @@
 </section>
 
 <footer>
-    <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</
+    <p>&copy; 2025 Brewmandu | Crafted with ❤️ in Kathmandu</p>
+</footer>
 
+<script>
+    function addToCart(item, price) {
+        alert(item + " added to your cart. Price: NPR " + price);
+    }
+</script>
 
 <!-- Cart Section -->
 <section class="cart-section">
